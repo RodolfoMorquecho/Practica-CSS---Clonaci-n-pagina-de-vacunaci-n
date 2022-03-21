@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Fredoka', sans-serif;
+    color: #1B4F72;
+    background: white;
+}
+.contenedorPadre{
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    min-width: 500px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    padding: 0px 30px;
+}
+nav .contenedorLogo{
+    display: flex;
+    width: 20%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+nav .contenedorLogo p{ /*color y tamaño de "Vaccination"
+    /* Aqui no se pone height para que no se bloquee el centrado en la clase anterior */
+    color: blue; 
+    font-size: 1.8rem;
+}
+nav .menu{
+    display: flex;
+    list-style: none;
+    padding: 0px 90px;
+    width: 55%;
+    margin-left: auto;
+    justify-content: space-around;
+}
+nav .menu li a{ /*estilo a la letra dentro del navegador*/
+    text-decoration: none;
+    color: gray;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav .menu li{
+    display: flex;
+    text-align: center;
+}
+.menu li a:hover{ /*estilo para cuando se pone el cursor sobre un apartado del menu*/
+    background: #00FDE8;
+}
+nav .contenedorBoton{
+    height: 100%;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+.botonEnlaceAzul{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*Aqui termina el diseño de navegador*/
+
+/*Seccion izquierda de la primer hoja del sitio */
+section .cuadroIzq1{
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+section .encabezado1{
+    width: 50%;
+    height: 570px;
+    padding: 140px 110px 150px 100px;
+}
+section .encabezado1 h1{
+    font-size: 3.4rem;
+    font-weight: 600;
+    color: navy;
+}
+section .encabezado1 p{
+    width: 300x;
+    font-size: 1.1rem;
+    margin: 18px 0px;
+}
+section .encabezado1 .contenedorIconoAmarillo{ /*Caja que contiene iconos amarillos y texto*/  
+    display: flex;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+section .encabezado1 .contenedorIconoAmarillo .fa-solid{ /*caja que contiene los iconos amarillos*/
+    width: 25px;
+    height: 25px;
+    margin: 0px 8px;
+    padding: 4px;
+    background: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+section .encabezado1 .contenedorIconoAmarillo .fa-shield-blank{ /*estilo del icono escudo*/
+    color: yellow;
+}
+section .encabezado1 .contenedorIconoAmarillo .fa-star{ /*estilo del icono estrella*/
+    color: yellow;
+}
+section .encabezado1 .contenedorIconoAmarillo p{ /*estilo del texto lateral de los iconos*/
+    font-size: 1rem;
+
+}
+section .encabezado1 .contenedorCalendario{
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 95px;
+}
+section .encabezado1 .contenedorCalendario .fa-solid{
+    width: 25px;
+    height: 25px;
+    margin: 0px 15px;
+    padding: 5px;
+    background: #D4EFFA;
+    align-items: center;
+    justify-content: center;
+}
+section .encabezado1 .contenedorCalendario .fa-clock{ /*estilo del icono reloj*/
+    color: blue;
+}
+section .encabezado1 .contenedorCalendario p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: navy;
+}
+
+/* Aqui termina la parte izquierda de la primer pagina del sitio */
+ 
+/*Imagen del lado derecho de la primer parte del sitio*/
+section .cuadroDer1{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+section .cuadroDer1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Caja de informacion con opacidad */
+.cajaInformacion{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 100px;
+    top: 620px;
+    width: 67%;
+    min-width: 700px;
+    height: 100px;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(2, 109, 250, 0.3) 1px 1px 15px 1px;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+.cuadranteIzq{ /*Seccion con informacion dentro de la caja con opacidad*/
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+.cajaInformacion .cuadranteIzq .fa-solid{ /*caja que contiene el icono*/
+    width: 30px;
+    height: 30px;
+    align-self: baseline;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 4px;
+    margin: 0px 8px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4EFFA;
+    border-radius: 4px;
+}
+/*estilo de los iconos*/
+.fa-location-dot{
+    color: blue;
+    background: #D4EFFA;
+}
+.fa-calendar-days{
+    color: blue;
+    background: #D4EFFA;
+}
+.fa-syringe{
+    color: blue;
+    background: #D4EFFA;
+}
+.cuadranteDer{ /*Seccion que contiene el boton "submit" dento de la caja con opacidad*/
+    justify-self: center;
+    padding: 50px;
+}
+
+/* Contenedor 2 ó sección dos del sitio */
+
+
+section .rectanguloSup1{ /*caja que contiene los logos de las farmaceuticas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 190px;
+    padding: 30px 100px;
+}
+section .rectanguloSup1 .opacarLogos{ /*aplicion de diseño a los logos*/
+    display: inline-block;
+    width: 200px;
+    opacity: 0.5;
+    margin: 0px 70px;
+}
+.rectanguloInf1{ /*tamaño de la seccion bajo los logos*/
+    width: 100%;
+    padding: 50px 100px;
+}
+.encabezado2 h2{ /*estilo de encabezado  "Why should I vaccine" */
+    width: 50%;
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.rectanguloInf1 .encabezado2 p{ /*estilo de texto debajo de "Why should I vaccine" */
+    width: 50%;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+/*Contenedor de beneficios opaco*/
+
+.cajaBeneficios{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 0px;
+    padding: 0px 30px;
+}
+.tarjetaBeneficio{
+    width: 20%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 5px;
+    padding: 20px;
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+.rectanguloInf1 .cajaBeneficios .tarjetaBeneficio .fa-solid{
+    width: 38px;
+    height: 38px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #D4EFFA;
+    color: blue;
+    border-radius: 4px;
+    align-self: baseline;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.tarjetaBeneficio h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.tarjetaBeneficio p{
+    font-size: .9rem;
+}
+
+/* Seccion 3 preparacion antes de vacunacion */
+
+.contenedorInferior .contenedorTres{
+    width: 100%;
+    height: 700px;
+    
+}
+.cuadroIzq2{
+    float: left;
+    width: 47%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.cuadroIzq2 img{
+    height: 100%;
+    object-fit: cover;
+}
+.contenedorTres section .cuadroDer2{
+    float: left;
+    margin-left: 42px;
+    width: 50%;
+    height: 700px;
+}
+.cuadroDer2 h2{
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin: 50px 0px 20px;
+}
+.cuadroDer2 p{
+    font-size: 1.2rem;
+}
+
+/*Seccion (parte derecha) de puntos a tomar en cuenta antes de vacunarse*/
+.contenedor-lista{
+    width: 450px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+}
+.cuadroDer2 .contenedor-lista .list-item .fa-solid{
+    width: 25px;
+    height: 25px;
+    margin: 0px 15px;
+    font-size: medium;
+    background-color: #D4EFFA;
+    color: blue;
+    padding: 5px;
+    border-radius: 4px;
+}
+.list-item p{
+    width: 290px;
+}
+.cuadroDer2 .contenedor-lista .list-item .fa-caret-down{
+    width: 18px;
+    height: 22px;
+    margin: 0px 15px;
+    font-size: medium;
+    background-color: #D4EFFA;
+    color: blue;
+    padding: 3.5px;
+    border-radius: 4px;
+}
+
+/* Seccion "Emergency Contact" */
+.contenedorCuatro{
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
+}
+.cuadroIzq3{
+    float: left;
+    margin-left: 110px;
+    width: 50%;
+    height: 730px;
+}
+.cuadroIzq3 h2{
+    width: 90%;
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin: 50px 0px 20px;
+}
+.cuadroIzq3 p{
+    width: 90%;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.cajaContacto{
+    float: left;
+    margin-left: 100px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+.contenedor-carta-contacto{
+    position: relative;
+    width: 180px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.apartado-carta-contacto{
+    height: 50%;
+    top: 10px;
+    display: flex;
+    position: relative;
+    padding: 12px;
+}
+.contenedor-carta-contacto .apartado-carta-contacto .fa-solid{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #D4EFFA;
+    color: blue;
+    border-radius: 4px;
+}
+.apartado-carta-contacto p{
+    width: 120px;
+    margin-left: 35px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.botonAzulOpaco{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    top: 120px;
+    left: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #D4EFFA;
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.botonAzul{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    top: 120px;
+    left: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: blue;
+    color: #D4EFFA;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*Seccion derecha (foto de doctor con telefono) */
+
+.cuadroDer3{
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.cuadroDer3 img{
+    height: 800px;
+    object-fit: cover;  /* Ajusta la imagen reduciendola pero sin perder el equilibrio de pixeles en alto y ancho*/
+}
+
+/*Ultima seccion "footer"*/
+
+footer{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 280px;
+    padding: 45px 80px 8px;
+    font-size: 1.2rem;
+    background-color: #D4EFFA;
+}
+footer .parteSuperiorFooter{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+}
+footer .ladoIzqCaja{
+    width: 210px;
+}
+footer .ladoIzqCaja h3{
+    font-weight: 500;
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 15px;
+}
+footer .ladoIzqCaja p{
+    font-size: 1.1rem;
+}
+footer .ladoDerCaja{
+    width: 650px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+}
+.ladoDerCaja ul{
+    list-style: none;
+    margin: 0 25px;
+}
+.ladoDerCaja ul li{
+    margin: 10px 0;
+}
+.ladoDerCaja ul li b{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+footer .ladoInfCaja{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.ladoInfCaja div p{
+    display: inline;
+    margin: 0 10px;
+}
